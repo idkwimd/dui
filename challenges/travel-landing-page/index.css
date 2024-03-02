@@ -4,13 +4,14 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
+    background: rgb(30 30 30);
 }
 body * {
     box-sizing: inherit;
 }
 
 .welcome {
-    height: 100vh;
+    height: calc(.52 * 100vw);
     position: relative;
 }
 .welcome > .layer {
@@ -27,7 +28,7 @@ body * {
     background-repeat: no-repeat;
 }
 .welcome > .bg-layer-1 {
-    background: url('./images/eb01.png');
+    background-image: linear-gradient(to top, rgb(30 30 30 / 1) 0%, rgb(30 30 30 / 0) 15%), url('./images/eb01.png');
     background-size: 100% auto;
     background-position: 50% bottom;
     background-repeat: no-repeat;
@@ -44,12 +45,13 @@ body * {
     -webkit-text-fill-color: transparent;
 }
 .jumbotron .title {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: 700;
     white-space: nowrap;
 }
 .jumbotron .subtitle {
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 200;
     text-transform: uppercase;
+    padding-left: .3vw;
 }
